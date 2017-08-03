@@ -1,3 +1,7 @@
+//Copyright (c) 2017, Technomancers. All rights reserved.
+//Use of this source code is governed by a BSD-style
+//license that can be found in the LICENSE file.
+
 package piCamera
 
 import (
@@ -32,7 +36,7 @@ const (
 
 //Convert takes the type and returns the string representation of that value.
 //Returns true as well if it is the default value.
-func (t AWBType) Convert() (string, bool) {
+func (t AWBType) Convert() (string, bool) { //nolint: gocyclo
 	switch t {
 	case AwbAuto:
 		return "auto", true

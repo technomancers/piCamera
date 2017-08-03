@@ -1,3 +1,7 @@
+//Copyright (c) 2017, Technomancers. All rights reserved.
+//Use of this source code is governed by a BSD-style
+//license that can be found in the LICENSE file.
+
 package piCamera
 
 import (
@@ -12,7 +16,7 @@ type RegionOfIntrest struct {
 	h   float32
 }
 
-//NewROI creates a new Region of Intrest.
+//NewROI creates a new Region of Interest.
 //tlx and tly are the top left x and y of ROI.
 //w and h are the width and height of the ROI.
 //All points should be normalized from 0.0 - 1.0.
