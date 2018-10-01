@@ -64,6 +64,7 @@ func New(parentCtx context.Context, args *RaspividArgs) (*PiCamera, error) {
 		command:  cmd,
 		stdOut:   stdOut,
 		rwMutext: new(sync.RWMutex),
+		args:     args,
 	}, nil
 }
 
